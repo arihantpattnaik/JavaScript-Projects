@@ -1,0 +1,54 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+body{
+    background: plum;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    display: flex;
+}
+h1{
+    color: aqua;
+    text-align: center;
+}
+h4{
+    text-align: center;
+    color: aqua;
+}
+
+.container{
+    background: black;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px black;
+    text-align: center;
+}
+
+.section{
+    margin-bottom: 1rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+button{
+    width: 30%;
+    height: 30%;
+    padding: 10px;
+    align-self: center;align-items: center;align-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 12px;
+}
