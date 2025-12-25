@@ -9,7 +9,6 @@ const plusfive=document.querySelector("#plus5-button");
 function calculate(){
     countelement.textContent=count;
 
-    
     if(count==0)
     {
         decBtn.disabled=true;
