@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habit & Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- HABIT TRACKER -->
+    <div class="habit-container">
+      <h2>Habit Tracker</h2>
+
+      <!-- Register Habit -->
+      <section class="input-section">
+        <h4>Register New Habit</h4>
+        <input type="text" id="habit-name" placeholder="Habit name" />
+        <button id="register-habit-btn">Register Habit</button>
+      </section>
+
+      <!-- Mark Habit Completion -->
+      <section class="input-section">
+        <h4>Mark Habit Completed</h4>
+
+        <label for="habit-select">Select Habit</label>
+        <select id="habit-select"></select>
+
+        <label for="habit-date">Select Date</label>
+        <input type="date" id="habit-date" />
+
+        <button id="mark-complete-btn">Completed</button>
+      </section>
+
+      <!-- Habit History -->
+      <section class="output-section">
+        <h4>Habit Completion History</h4>
+        <ul id="habit-history"></ul>
+      </section>
+    </div>
+
+    <!-- EXPENSE TRACKER -->
+    <div class="expense-container">
+      <h2>Expense Tracker</h2>
+
+      <!-- Register Category -->
+      <section class="input-section">
+        <h4>Add Expense Category</h4>
+        <input type="text" id="expense-category" placeholder="Category name" />
+        <button id="add-category-btn">Add Category</button>
+      </section>
+
+      <!-- Add Expense -->
+      <section class="input-section">
+        <h4>Add Expense</h4>
+
+        <label for="category-select">Select Category</label>
+        <select id="category-select"></select>
+
+        <label for="expense-amount">Amount</label>
+        <input type="number" id="expense-amount" />
+
+        <label for="expense-date">Date</label>
+        <input type="date" id="expense-date" />
+
+        <button id="add-expense-btn">Add Expense</button>
+      </section>
+
+      <!-- Expense History -->
+      <section class="output-section">
+        <h4>Expense History</h4>
+        <ul id="expense-history"></ul>
+      </section>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
