@@ -1,0 +1,191 @@
+/* ================= Global Reset ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #0b1220;
+  color: #e5e7eb;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* ================= Main Layout ================= */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* ================= Card Containers ================= */
+.Member-container,
+.Task-Manager {
+  background: #0b1c2d;
+  width: 380px;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  border: 1px solid #1e3a8a;
+}
+
+/* ================= Headings ================= */
+.Member-container h2,
+.Task-Manager h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.Member-container h4 {
+  margin-top: 15px;
+  color: #93c5fd;
+  text-align: center;
+}
+
+/* ================= Sections ================= */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ================= Inputs & Selects ================= */
+input,
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #112a45;
+  color: #e0f2ff;
+  font-size: 0.95rem;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input[type="date"] {
+  cursor: pointer;
+}
+
+/* ================= Buttons ================= */
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ================= Lists ================= */
+ul {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+}
+
+/* ================= Task Items ================= */
+.task-item {
+  background: #112a45;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #3b82f6;
+  gap: 10px;
+}
+
+.task-item span {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* ================= Task Buttons ================= */
+.complete-btn {
+  padding: 6px 12px;
+  background: #22c55e;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.complete-btn:hover {
+  background: #16a34a;
+}
+
+/* ================= Member Points ================= */
+.member-points {
+  background: #020617;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 6px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #facc15;
+}
+
+/* ================= Expense Tracker ================= */
+#adults-checkboxes,
+#adults-checkboxes div {
+  display: flex;
+  flex-direction: column;
+}
+
+#adults-checkboxes strong {
+  margin-bottom: 5px;
+  color: #93c5fd;
+}
+
+.adult-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+/* ================= Expense & Investment Items ================= */
+.expense-item {
+  background: #020617;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+  border-left: 4px solid #facc15;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Member-container,
+  .Task-Manager {
+    width: 100%;
+    max-width: 420px;
+  }
+}
