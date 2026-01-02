@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Decision Freeze Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app-container">
+
+    <header>
+      <h2>Decision Freeze Assistant</h2>
+      <p>Make decisions once. Trust them later.</p>
+    </header>
+
+    <!-- CREATE DECISION -->
+    <section class="card">
+      <h3>Create Decision</h3>
+      <input type="text" id="decision-title" placeholder="Decision title" />
+      <button id="create-decision-btn">Create Decision</button>
+    </section>
+
+    <!-- ADD OPTION -->
+    <section class="card">
+      <h3>Add Option</h3>
+      <select id="decision-select">
+        <option value="">Select decision</option>
+      </select>
+
+      <input type="text" id="option-input" placeholder="Option text" />
+      <button id="add-option-btn">Add Option</button>
+    </section>
+
+    <!-- DECISIONS -->
+    <section class="card">
+      <h3>Active Decisions</h3>
+      <div id="decision-list"></div>
+    </section>
+
+    <!-- LOG -->
+    <section class="card">
+      <h3>Decision Log</h3>
+      <ul id="decision-log"></ul>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
